@@ -1,0 +1,18 @@
+version: "2"
+
+services:
+    web:
+        image: nginx
+        ports:
+            - "80:80"
+        volumes:
+            - "./nginx-conf:/etc/nginx/conf.d/"
+            - "./html:/html"
+            - "./js:/js"
+    webpack:
+        image: jmfirth/webpack
+        user: "1000"
+        volumes:
+            - .:/app
+        command: webpack -w
+        stop_signal: SIGKILL
