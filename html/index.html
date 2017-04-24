@@ -3,9 +3,19 @@
 <html>
     <head>
         <title>rPOS UI</title>
+        <meta charset="UTF-8" />
+        <script src='js/router.js'></script>
     </head>
 
     <body>
         <div id="content"></div>
+        <script>
+            window.rpos.router('#content',
+                    {
+                        login: 'http://localhost:8080',
+                        auth: 'http://localhost:8081',
+                    }
+                    );
+        </script>
     </body>
 </html>

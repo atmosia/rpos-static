@@ -17,7 +17,7 @@ function devtoolFilenameTemplate(info) {
 module.exports = {
     context: __dirname + '/src',
     entry: {
-        "login": "login",
+        "router": "router",
     },
     devtool: "#source-map",
     resolve: {

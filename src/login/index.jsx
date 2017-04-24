@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom'
 import React from 'react'
-import LoginBox from 'login-box'
+import LoginBox from './login-box'
 
 window.rpos = window.rpos || {};
 
