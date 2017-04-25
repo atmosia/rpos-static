@@ -1,0 +1,43 @@
+body {
+    background-color: #DFDFEE;
+    font-family: Helvetica;
+}
+
+div.login-box {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px #CCCCCC;
+}
+
+div.login-title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+form div {
+    padding-bottom: 10px;
+}
+
+form span {
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px
+}
+
+div.button-field {
+    text-align: center;
+}
+
+div.message {
+    padding-bottom: 10px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}

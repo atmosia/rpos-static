@@ -51,7 +51,8 @@ export default React.createClass ({
                             />
                     </span>
                 </div>
-                <div><input
+                <div className="button-field">
+                    <input
                         type='submit'
                         value='Login'
                         onClick={this.login}

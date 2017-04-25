@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import {Router, Route, IndexRoute, Link} from 'react-router'
 import {createHashHistory} from 'history'
 import LoginBox from './login/login-box'
+import ShopBox from './shop/shop-box'
 import Auth from './auth'
 
 
@@ -24,14 +25,17 @@ window.rpos.router = function(selector, urlList, props = {}) {
 
     var app = React.createClass({
         render() {
-            return (<div>
-                        <div>
+            return (<div className="body-content">
+                        <div className="navigation">
                             <Link to="/">Home</Link>
                             <Link to="clubs">Clubs</Link>
                             <Link to="pos">POS</Link>
                             <Link to="shop">Shop</Link>
                         </div>
-                    <div>{ this.props.children }</div></div>);
+                    <div className="body">
+                        { this.props.children }
+                    </div>
+                </div>);
         },
     });
 
@@ -55,7 +59,7 @@ window.rpos.router = function(selector, urlList, props = {}) {
 
     var shop = React.createClass({
         render() {
-            return (<div>SHOP</div>)
+            return (<ShopBox history={history} />);
         },
     });
 

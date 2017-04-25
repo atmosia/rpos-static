@@ -26,8 +26,8 @@ export default React.createClass ({
 
     render() {
         return (
-            <div>
-                <div>rPOS Login</div>
+            <div className="login-box">
+                <div className="login-title">rPOS Login</div>
                 <div className="message">{ this.state.message }</div>
                 <LoginForm login={this.state.login} />
             </div>
